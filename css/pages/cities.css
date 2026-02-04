@@ -1,0 +1,17 @@
+/* TODO: design your flexbox layout with a sticky map */
+
+/* We just give you a Gmaps with random width/height */
+#map {
+  display: none;
+  width: 100vh;
+  height: 88vh;
+  position: sticky;
+  top: 0;
+  margin: 16px 16px 0 0;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+#map.is-visible {
+  display: block;
+}
