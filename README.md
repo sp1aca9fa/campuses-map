@@ -1,4 +1,4 @@
-# Map Layout
+# Campuses Map
 
 A responsive results page layout featuring a sticky map and a grid of content cards, built using modern CSS techniques.
 
@@ -51,7 +51,7 @@ serve
 ```
 
 Then open:
-http://localhost:8000
+http://localhost:3000
 
 ## Learnings
 
