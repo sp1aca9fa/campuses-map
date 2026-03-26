@@ -56,8 +56,7 @@ cd campuses-map
 npx serve
 ```
 
-Then open:
-http://localhost:3000
+Open in your browser: http://localhost:3000
 
 ## Learnings
 
