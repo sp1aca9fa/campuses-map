@@ -1,35 +1,67 @@
-## Background & Objectives
+# Map Layout
 
-Build a [results page with a sticky map](https://lewagon.github.io/layouts-demo/campuses-with-map.html) like in the lecture. For this exercise, notice we have not imported Bootstrap anywhere in the `index.html`! You will need to implement this layout in the `pages/cities.css` file without using Bootstrap:
+A responsive results page layout featuring a sticky map and a grid of content cards, built using modern CSS techniques.
 
-![](https://raw.githubusercontent.com/lewagon/fullstack-images/master/frontend/map-example.png)
+## Features
 
-## Starting the challenge
+- Responsive card grid layout
+- Sticky map that remains visible while scrolling
+- Layout built using Flexbox and CSS positioning
+- Clean separation between components and page-level styles
+- Interactive map rendered using Leaflet
 
-1. Make sure you understand the code in `index.html`, and the design we give you for navbar and cards in `components/navbar.css` and `components/card.css`. If you don't understand it fully, raise a ticket and someone will explain it!
-2. Go back to the lecture to rehearse how you can build a layout using `flexbox` and `position: sticky`.
-3. **Don't cheat by inspecting the code! 🔎** The goal of this challenge is to teach you how to build a layout by yourself. Take your time to think, ask teachers if you're stuck, but don't cheat 😉
+## Tech Stack
 
-To display the MapBox map, you will need to [get a MapBox API key](https://www.mapbox.com/account/access-tokens/) and make sure you add your own key to the url in the `src` attribute of the `#map` image element.
+- HTML5
+- CSS3 (Flexbox, positioning, layout structuring)
+- Leaflet.js (map rendering)
+- OpenStreetMap
 
-To test your code and view your page in the browser, launch a web server (don't just open the HTML file in your browser) using the command below:
+## How It Works
 
-```
+The page is divided into two main sections:
+
+- A grid of cards displaying content (e.g., city results)
+- A map positioned on the side that remains visible using `position: sticky`
+
+The layout is implemented using:
+- Flexbox for horizontal structure
+- CSS Grid/Flex patterns for the card layout
+- Sticky positioning to keep the map in view while scrolling
+
+The map is dynamically rendered using Leaflet and centered on predefined coordinates.
+
+## Implementation Note
+
+While the original challenge suggested using Mapbox, this implementation uses Leaflet with OpenStreetMap data.
+
+This approach was chosen to:
+- Work with fully open and free mapping tools
+- Avoid reliance on API keys or external billing setup
+- Explore how mapping libraries can be integrated independently of proprietary services
+
+The result preserves the intended functionality while using an alternative, open-source mapping stack.
+
+## Setup
+
+```bash
+git clone <your-repo-url>
+cd map-layout
 serve
 ```
 
-As you can see we already coded the `card` component for you, so all you have to do is:
-- Build a grid of `.cards` around the `.card`s.
-- Build a horizontal layout to have the `.cards` on the left and the `#map` on the right.
+Then open:
+http://localhost:8000
 
-**[Tip]** Draw the HTML structure before you get started!
+## Learnings
 
-NB: don't forget to **hard refresh** (`cmd + shift + r`) to clear your browser's cache if your page doesn't seem to display your current code!
+- Building layouts from scratch using Flexbox
+- Using position: sticky for UI behavior
+- Structuring CSS into components vs page-level styles
+- Designing responsive layouts without frameworks
+- Integrating a mapping library into a static page
 
-## New CSS organization
 
-Notice that we now have **two folders** in our CSS:
-- `components` to code all our graphical components.
-- `pages` to code the layouts of the different pages on our website.
+## Notes
 
-As usual, `style.css` is importing all the other stylesheets and is then linked in the HTML.
+This project is a solution to a bootcamp coding challenge, focused on layout and CSS architecture, with a custom implementation of the mapping layer using open-source tools.
