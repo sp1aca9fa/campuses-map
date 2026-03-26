@@ -47,7 +47,7 @@ The result preserves the intended functionality while using an alternative, open
 ```bash
 git clone https://github.com/sp1aca9fa/campuses-map.git
 cd campuses-map
-serve
+npx serve
 ```
 
 Then open:
