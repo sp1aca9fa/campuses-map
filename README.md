@@ -69,4 +69,4 @@ Open in your browser: http://localhost:3000
 
 ## Notes
 
-This project is a solution to a bootcamp coding challenge, focused on layout and CSS architecture, with a custom implementation of the mapping layer using open-source tools.
+This project is a solution to a Le Wagon bootcamp coding challenge, focused on layout and CSS architecture, with a custom implementation of the mapping layer using open-source tools.
